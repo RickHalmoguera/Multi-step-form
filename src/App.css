@@ -28,6 +28,7 @@ body{
   border-radius: 1em;
   padding: 2em;
   width: 90%;
+  
 }
 
 footer{
@@ -60,7 +61,7 @@ footer{
   letter-spacing: 1.5px;
 }
 
-@media screen and (min-width:550px){
+@media screen and (min-width:860px){
   body{
     padding: 1em;
     display: flex;
@@ -73,6 +74,7 @@ footer{
     gap: 1em;
     background: hsl(0, 0%, 100%);
     padding: 1em;
+    min-width: 840px;
     max-width: 940px;
     border-radius: 1em;
     

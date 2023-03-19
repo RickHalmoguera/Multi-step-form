@@ -32,8 +32,14 @@
 }
 
 
-@media screen and (min-width:550px) {
+@media screen and (min-width:860px) {
     .steps-cards-container{
     position: initial;
+    min-width: 500px;
+
+    }
+
+    .right{
+        margin-left: auto;
     }
 }

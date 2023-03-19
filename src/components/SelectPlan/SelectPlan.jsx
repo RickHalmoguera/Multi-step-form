@@ -1,10 +1,15 @@
 import arcade from '../../assets/icon-arcade.svg'
 import advance from '../../assets/icon-advanced.svg'
 import pro from '../../assets/icon-pro.svg'
+import { Link } from "react-router-dom";
+
 import './SelectPlan.css'
 
 
 export  function SelectPlan() {
+    
+
+
     return (
         <div className='step-card '>
             <div className='card-heading'>
@@ -39,15 +44,15 @@ export  function SelectPlan() {
             </div>
             <div className='payment-selector-container'>
             <span className='monthly'>Monthly</span>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox"/>
-                <span class="slider round"></span>
+                <span className="slider round"></span>
             </label>
             <span className='yearly'>Yearly</span>
             </div>
             <div className='buttons-container'>
-                <button className='button-back'>Go back</button>
-                <button className='button-next'>Next Step</button>
+                <Link to={'/'}><button className='button-back'>Go back</button></Link>
+                <Link to={'/addons'}><button className='button-next'>Next Step</button></Link>
             </div>
         </div>
     )

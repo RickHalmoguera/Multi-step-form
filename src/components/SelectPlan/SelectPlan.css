@@ -6,33 +6,42 @@
 }
 .plan-selector-container{
     display: flex;
+    flex-direction: column;
     gap: .5em;
 }
 
 .plan-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 183px;
+    flex-direction: row;
+    gap: 1em;
     min-width: 138px;
     border: 1px solid hsl(231, 11%, 63%);
     border-radius: 1em;
     padding: 1em;
 }
 
+.plan-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
 .plan-info .plan-title{
+    margin: 0;
     color: hsl(213, 96%, 18%) ;
     font-weight: 700;
 }
 
 .plan-info .amount{
+    margin: 0;
     color: hsl(231, 11%, 63%) ;
     font-size: .9rem;
     font-weight: 500;
 }
 
 .plan-info .offer{
+    margin: 0;
+    display: none;
     color: hsl(213,96%,18%);
     font-size: .8rem;
     font-weight: 500;
@@ -44,6 +53,7 @@
     display: flex;
     justify-content: center;
     gap: 1em;
+    margin-top: 2em;
 }
 
 .monthly{
@@ -55,6 +65,7 @@
     color:hsl(213, 96%, 18%);
     font-weight: 500;
 }
+
 .switch {
     position: relative;
     display: inline-block;
@@ -111,7 +122,27 @@ input:checked + .slider:before {
 }
 
 .buttons-container{
-    display: flex;
+    display: none;
     
-    justify-content: space-between;
+}
+
+@media screen and (min-width:860px) {
+    .plan-selector-container{
+        flex-direction: row;
+    }
+    .plan-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .plan-info .offer{
+        display: initial;
+        
+    }
+
+    .buttons-container{
+        display: flex;
+        justify-content: space-between;
+    }
 }

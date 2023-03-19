@@ -1,0 +1,42 @@
+.addons-selector-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.addon-container{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 1em;
+    padding:  1em;
+}
+
+.addon-info{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.addon-info .addon-title , .addon-info .addon-description{
+margin: 0;
+
+}
+
+.addon-info .addon-title{
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+
+.addon-info .addon-description{
+    font-size: .7rem;
+    color: hsl(229, 24%, 87%);
+}
+
+.addon-price{
+    font-size: .8rem;
+    color:  hsl(243, 100%, 62%);
+}
