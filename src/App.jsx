@@ -11,8 +11,8 @@ function App() {
       <div className='card-container'>
         <StepIndicator/>
         <div className='steps-cards-container'>
-          {/*<PersonalInfo/>*/}
-          <SelectPlan/>
+          {<PersonalInfo/>}
+          {/*<SelectPlan/>*/}
         </div>
       </div>
 

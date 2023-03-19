@@ -1,5 +1,6 @@
 .step-card{
     min-height: 373px;
+    
 }
 .step-card .card-title, .step-card label{
     margin-top: 0;
@@ -29,6 +30,7 @@
     color: hsl(231, 11%, 63%);
     font-weight: 700;
 }
+
 
 @media screen and (min-width:550px) {
     .steps-cards-container{
