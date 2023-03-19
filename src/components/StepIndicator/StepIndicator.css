@@ -1,0 +1,64 @@
+.step-indicator{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em;
+    height: 172px;
+    width: 100%;
+    background-image: url('../../assets/bg-sidebar-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.step-indicator .step-container .step-number-container{
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    width: 33px;
+    height: 33px;
+    background: transparent;
+}
+
+.step-indicator .step-container .step-number-container span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.step-indicator .step-container .step-info{
+    display: none;
+}
+
+@media screen and (min-width:550px) {
+    .step-indicator {
+        flex-direction: column;
+        justify-content: flex-start;
+        background-image: url('../../assets/bg-sidebar-desktop.svg');
+        height: 568px;
+        max-width: 274px;
+    }
+    
+    .step-indicator .step-container{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 100%);
+        letter-spacing: 1px;
+    }
+    
+    .step-indicator .step-container .step-info{
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+    }
+    
+    .step-indicator .step-container span{
+        color: hsl(206, 94%, 87%);
+        font-size: .8rem;
+        font-weight: 400;
+    }
+}
