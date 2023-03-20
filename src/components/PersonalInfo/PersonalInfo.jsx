@@ -4,7 +4,7 @@ import './PersonalInfo.css'
 
 export function PersonalInfo(props) {
     const [personal, setPersonal] = useState("");
-    
+    const [style, setStyle] = useState("");
     
     const nameRef = useRef();
     const emailRef = useRef();
@@ -25,10 +25,12 @@ export function PersonalInfo(props) {
         setPersonal( personal => ({...personal, phone}) );
     }
 
-    const handleCLick = () => {
+    const handleCLick = (event) => {
         if(personal.name && personal.email && personal.phone) {
-            console.log(personal);
             props.func(personal)
+        }else{
+            event.preventDefault();
+            alert("Please fill all the fields")
         }
     }
 

@@ -1,0 +1,57 @@
+.summary-container{
+    background: hsl(217, 100%, 97%);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+hr{
+    width: 100%;
+}
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-container .plan{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+.item{
+    color: hsl(231, 11%, 63%);
+
+}
+.plan p{
+    margin: 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.item-container .plan-price{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.item-container .item-price{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+
+.total-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.total-container .total-price{
+    color :hsl(243, 100%, 62%);
+    font-weight: 700;
+}
